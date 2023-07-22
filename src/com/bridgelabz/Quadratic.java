@@ -35,5 +35,19 @@ public class Quadratic {
             System.out.format("root1 = %.2f and root2 = %.2f", root_1, root_2);
 
         }
+
+      else if (delta == 0){
+
+            root_1 = root_2 = -b/(2*a);
+            System.out.format("root1 = root2 = %.2f", root_1 ,root_2);
+        }
+      else {
+
+          double real = -b/(2*a);
+          double imagnary = Math.sqrt(-delta)/(2*a);
+            System.out.println("root1" +" "+real);
+            System.out.println( "root2"+ " " +imagnary);
+
+        }
     }
 }
